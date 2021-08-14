@@ -20,6 +20,10 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'playlist-script';
+  src:url('../fonts/playlist-script.otf') format('opentype');
+  }
 
 /* ====================================================================================================================
  * RESETS

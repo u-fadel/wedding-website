@@ -17,6 +17,8 @@ Global Styles
   display: table;
   clear: both;
 }
+
+
 .no-padding {
   padding: 0;
 }
@@ -172,6 +174,17 @@ Waypoinsts
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
   visibility: visible
 }
+/* ==========================================================================
+google maps
+========================================================================== */
+.mapouter{
+  position:center;
+  text-align:center;
+  height:294px;
+  width:535px;
+  //margin-left:500px;
+  margin-left:33%;
+}
 
 /* ==========================================================================
 Navigation
@@ -252,7 +265,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
+  background: url('../img/hero-min.jpeg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -328,11 +341,11 @@ header {
       display: inline;
 
       a {
-        color: $txt-light;
+        color: $accent-color;
         padding-right: 25px;
 
         &:hover {
-          color: $accent-color;
+          color: $txt-light;
         }
       }
       &:last-child a {
@@ -656,7 +669,7 @@ Instagram
 /* ==========================================================================
 Engagement Pics
 ========================================================================== */
-#eng-pics {
+#fotos {
   img {
     width: 100%;
     height: auto;
@@ -898,4 +911,15 @@ body.modal-open {
 }
 .modal-body {
   padding:25px;
+}
+
+/**********************************************************************
+countdown
+***************************************************************************/
+.countdown {
+  font-size: 30px;
+  color: #e8ca6f;
+  font-weight: 700;
+  font-family: playlist-script;
+  /*background-color: #BE9A2E*/
 }
