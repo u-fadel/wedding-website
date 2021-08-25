@@ -177,14 +177,21 @@ Waypoinsts
 /* ==========================================================================
 google maps
 ========================================================================== */
-.mapouter{
-  position:center;
-  text-align:center;
-  height:294px;
-  width:535px;
-  //margin-left:500px;
-  //margin-left:33%;
+// .mapouter{
+//   position:center;
+//   text-align:center;
+//   height:294px;
+//   width:535px;
+//   //margin-left:500px;
+//   //margin-left:33%;
+// }
+.mapouter {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
 }
+
 
 /* ==========================================================================
 Navigation
@@ -420,7 +427,7 @@ Intro
   }
 }
 #intro p {
-  text-align: center;
+  text-align: left;
 }
 
 /* ==========================================================================
