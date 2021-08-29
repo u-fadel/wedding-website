@@ -417,7 +417,20 @@
     </section>
     <section class="rsvp text-center" id="rsvp">
 
-        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="rsvp-modal">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <div class="text-center" >
+                    <div class="section-padding">
+                        <h3>¡Gracias!</h3>
+                        <img src="img/gracias.jpg" alt="" width="40%" height="40%" style="padding-bottom: 10px;"/>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -429,9 +442,9 @@
                             <div id="add-to-cal"></div>
                         </div>
                     </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+                </div>
+            </div>
+        </div> -->
 
         <div class="container">
             <div style="text-align: center;">
@@ -501,7 +514,7 @@
     <script>
         $(window).load(function () {
             $(".popupA").click(function(){
-            $('.popupBancario').show();
+                $('.popupBancario').show();
             });
             $('.popupBancario').click(function(){
                 $('.popupBancario').hide();
@@ -509,12 +522,22 @@
             $('.popupCloseButton').click(function(){
                 $('.popupBancario').hide();
             });
+            $(".popupB").click(function(){
+                $('.popupDC').show();
+            });
+            $('.popupDC').click(function(){
+                $('.popupDC').hide();
+            });
+            $('.popupCloseButton').click(function(){
+                $('.popupDC').hide();
+            });
+            $('.rsvp-modal').hide();
         });
     </script>
-    <script>
+    <!-- <script>
         $(window).load(function () {
             $(".popupB").click(function(){
-            $('.popupDC').show();
+                $('.popupDC').show();
             });
             $('.popupDC').click(function(){
                 $('.popupDC').hide();
@@ -523,7 +546,7 @@
                 $('.popupDC').hide();
             });
         });
-    </script>
+    </script> -->
     <script>
         // 2. This code loads the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
