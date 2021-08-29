@@ -195,15 +195,26 @@
                 </div>
             </div>
             <div class="row section-padding">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                <div class="col-md-4 col-md-offset-4 container">
+                    <!-- <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
                         <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress Code
-                    </a>
+                    </a> -->
+                    <a class="popupB btn" ><i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress Code</a>
                 </div>
             </div>
         </div>
-
-        <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="popupDC">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <h3 class="text-center section-padding">Sugerencias para que estes🔥🔥</h3>
+                <div class="row text-center">
+                    <img src="img/vestido.png" height="70px" width="70px">
+                    <img src="img/traje.jpg" height="70px" width="70px">
+                </div>
+            </div>
+        </div>
+        <!-- <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -212,17 +223,12 @@
                         <h3 class="text-center section-padding">Sugerencias para que estes🔥🔥</h3>
                         <div class="row text-center">
                             <img src="img/vestido.png" height="70px" width="70px">
-
                             <img src="img/traje.jpg" height="70px" width="70px">
-
-
                         </div>
-                        
-                            
                     </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+                </div>
+            </div>
+        </div> -->
 
     </section>
 
@@ -340,7 +346,7 @@
         </div>
 
 
-        <div class="popup">
+        <div class="popupBancario">
             <span class="helper"></span>
             <div>
                 <div class="popupCloseButton">&times;</div>
@@ -493,13 +499,26 @@
     <script>
         $(window).load(function () {
             $(".popupA").click(function(){
-            $('.popup').show();
+            $('.popupBancario').show();
             });
-            $('.popup').click(function(){
-                $('.popup').hide();
+            $('.popupBancario').click(function(){
+                $('.popupBancario').hide();
             });
             $('.popupCloseButton').click(function(){
-                $('.popup').hide();
+                $('.popupBancario').hide();
+            });
+        });
+    </script>
+    <script>
+        $(window).load(function () {
+            $(".popupB").click(function(){
+            $('.popupDC').show();
+            });
+            $('.popupDC').click(function(){
+                $('.popupDC').hide();
+            });
+            $('.popupCloseButton').click(function(){
+                $('.popupDC').hide();
             });
         });
     </script>
