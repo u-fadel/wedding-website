@@ -273,6 +273,10 @@ Hero
 .hero {
   min-height: 750px;
   background: url('../img/hero-min.jpeg') center center;
+  -webkit-background-size: 100%; 
+  -moz-background-size: 100%; 
+  -o-background-size: 100%; 
+  background-size: 100%; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -927,6 +931,7 @@ countdown
   font-size: 30px;
   color: #e8ca6f;
   font-weight: 700;
-  font-family: playlist-script;
+  // font-family: playlist-script;
+  font-family: amsterdam4;
   /*background-color: #BE9A2E*/
 }

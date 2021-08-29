@@ -24,6 +24,10 @@
   font-family: 'playlist-script';
   src:url('../fonts/playlist-script.otf') format('opentype');
   }
+  @font-face {
+    font-family: 'amsterdam4';
+    src:url('../fonts/amsterdam4.ttf') format('opentype');
+    }
 
 /* ====================================================================================================================
  * RESETS
