@@ -814,6 +814,7 @@ RSVP form
 .rsvp {
   padding-bottom: 140px;
   .rsvp-form {
+    text-align: center;
     .rsvp-btn {
       padding: 15px 0;
       border-radius: 3px;
@@ -1029,7 +1030,7 @@ countdown
 }
 /* Popup box BEGIN */
 
-#container {
+.container {
   text-align: center;
 }
 
