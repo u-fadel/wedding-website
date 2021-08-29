@@ -327,17 +327,44 @@
             <h3>¿Qué nos pueden regalar?</h3>
             <p>Si deseas hacernos un regalo, podes colaborar con nuestra Luna de Miel 🌜🍯</p>
         </div>
-
-                  <div class="row section-padding">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-regalo">
-                        <i class="fa fa-barcode"></i>&nbsp;&nbsp;Regalanos
-                    </a>
+        <div>
+            <div class="col-md-4 col-md-offset-4 container">
+                <!-- <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-regalo">
+                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Regalanos
+                </a> -->
+                <!-- <a data-fancybox data-src="#dc-regalo" href="javascript:;" data-options="{'touch':false}" class="btn btn-alt">Ver Datos Bancarios</a> --> <!--trucho-->
+                <div style="text-align: center;">
+                    <a class="popupA btn" ><i class="fa fa-barcode"></i>&nbsp;&nbsp;Regalanos</a>
                 </div>
             </div>
         </div>
 
-        <div id="dc-regalo" class="modal fade" tabindex="-1" role="dialog">
+
+        <div class="popup">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton">&times;</div>
+                <span class="title">Datos Bancarios</span>
+                <div class="text-center" >
+                    <div class="text-center">Caja de Ahorro:580200095950</div>
+                    <div class="text-center"> <strong>CBU $</strong> 0290058210000000959507 </div>
+                    <div class="text-center"> <strong>CBU u$s</strong> 0290058211000515310430</div>
+                    <div class="text-center"><strong>CUIT:</strong> 20-33779856-0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div style="display: none;" id="dc-regalo">
+            <span class="title">Datos Bancarios</span>
+            <div class="text-center" >
+                <div class="text-center">Caja de Ahorro:580200095950</div>
+                <div class="text-center"> <strong>CBU $</strong> 0290058210000000959507 </div>
+                <div class="text-center"> <strong>CBU u$s</strong> 0290058211000515310430</div>
+                <div class="text-center"><strong>CUIT:</strong> 20-33779856-0</div>
+            </div>
+        </div> -->
+
+        <!-- <div id="dc-regalo" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -350,12 +377,10 @@
                             <div class="text-center"> <strong>CBU u$s</strong> 0290058211000515310430</div>
                             <div class="text-center"><strong>CUIT:</strong> 20-33779856-0</div>
                         </div>
-                        
-                            
                     </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+                </div>
+            </div>
+        </div> -->
 
 <!--         
         <div class="text-center">
@@ -465,6 +490,19 @@
     <script src="js/scripts.min.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+    <script>
+        $(window).load(function () {
+            $(".popupA").click(function(){
+            $('.popup').show();
+            });
+            $('.popup').click(function(){
+                $('.popup').hide();
+            });
+            $('.popupCloseButton').click(function(){
+                $('.popup').hide();
+            });
+        });
+    </script>
     <script>
         // 2. This code loads the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
