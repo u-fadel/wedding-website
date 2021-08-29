@@ -935,3 +935,19 @@ countdown
   font-family: amsterdam4;
   /*background-color: #BE9A2E*/
 }
+
+
+.item-galeria{
+  padding: 0 3px;
+  margin-bottom: 5px;
+}
+
+.item-galeria a img {
+  transition: all 0.3s ease-out;
+  border-radius: 10px;
+}
+
+.fotos-nos {
+  max-width: 100%;
+  height: auto;
+}
